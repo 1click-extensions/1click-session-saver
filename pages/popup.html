@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Notepad</title>
+  <style>
+  body{
+    font-size: 18px;
+    width: 250px;
+  }
+  .btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    font-size: 11px;
+    outline: 0;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 21px;
+    line-height: 23px;
+    padding: 0 16px;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+		}
+    .hidden{
+      display: none;
+    }
+.session-show {
+    font-size: 12px;
+}
+ul.tabs-list {
+    max-height: 13px;
+    overflow-y: scroll;
+    font-size: 10px;
+}
+.name {
+    padding: 0 10px;
+}
+.session-show {
+    font-size: 12px;
+    border: 1px solid orange;
+    padding: 4px 3px 1px;
+}
+  </style>
+</head>
+<body  >
+  <div class="add-session">
+    <button id="new-session">Save current session</button>
+  </div>
+  <h3 class="recent">Load recent sessions</h3>
+   <div class="recent-sessions">
+    
+  </div>
+  <script src="../lib/jQuery.js"></script>
+  <script src="../js/popup.js"></script>
+</body>
+</html>

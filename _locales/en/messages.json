@@ -1,0 +1,9 @@
+{
+  "recent_title": {"message": "Recent sessions" },
+  "load": {"message": "Load" },
+  "remove": {"message": "Remove" },
+  "browser_action": {"message": "Sessions" },
+  "ext_desc": {"message": "Save your current tabs to open them later" },
+  "ext_name": {"message": "1Click session save" }
+}
+
