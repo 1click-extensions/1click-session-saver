@@ -1,4 +1,4 @@
-1Click-short-link | https://1ce.org
+1Click-session-saver | https://1ce.org
 
 
 This extension is an open-source 📰 extension. What is it mean for you:
