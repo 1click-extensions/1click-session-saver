@@ -54,15 +54,23 @@ chrome.runtime.onMessage.addListener( function(request,sender,sendResponse)
     {
         let sessions = SessionsStore.getAllSessions(),
         	selectedSession = sessions[request.time];
-
+         
         if(selectedSession){
+        	chrome.tabs.query({currentWindow: true}, function(tabs) {
+	         	let tabsIds = [];
+	         	for(let tab of tabs){
+	         		tabsIds.push(tab.id);
+	         	}
+	         	chrome.tabs.remove(tabsIds);
+	         	for(let tab of selectedSession.tabs){
+	        		//console.log(tab);
+	        		if(tab){
+	        			chrome.tabs.create({ url:tab.url});
+	        		}
+	        	}
+	         });
         	//console.log(selectedSession,sessions);
-        	for(let tab of selectedSession.tabs){
-        		//console.log(tab);
-        		if(tab){
-        			chrome.tabs.create({ url:tab.url});
-        		}
-        	}
+        	
         }
         sendResponse();      
     }
