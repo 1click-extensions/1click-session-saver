@@ -6,6 +6,7 @@ $(function(){
                 let session = response[sessionId],
                     sessShow = $('<div class="session-show">');
                 sessShow.append('<span class="name">' + session.time + '</span>');
+                sessShow.append('<button class="count">(' + chrome.i18n.getMessage('count_tabs',[session.tabs.length]) + ') </button>');
                 sessShow.append('<button class="open">'+chrome.i18n.getMessage('load')+'</button>');
                 sessShow.append('<button class="remove">'+chrome.i18n.getMessage('remove')+'</button>');
                 sessShow.append('<ul class="tabs-list"></ul>');
@@ -15,6 +16,9 @@ $(function(){
                 }
                 sessShow.find('.open').click(function(){
                     chrome.runtime.sendMessage({action: "openSession",time: session.time});
+                });
+                sessShow.find('.count').click(function(){
+                    jQuery(this).parent().find('.tabs-list').toggle();
                 });
                 sessShow.find('.remove').click(function(){
                     //let li = $(this).closest('li');
