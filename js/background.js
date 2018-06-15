@@ -40,9 +40,9 @@ SessionsStore = {
     },
 }
 
-chrome.browserAction.onClicked.addListener(function(tab) { 
-    chrome.tabs.create({url:chrome.extension.getURL('pages/notepad.html')})  
-});
+// chrome.browserAction.onClicked.addListener(function(tab) { 
+//     chrome.tabs.create({url:chrome.extension.getURL('pages/notepad.html')})  
+// });
 
 chrome.runtime.onMessage.addListener( function(request,sender,sendResponse)
 {

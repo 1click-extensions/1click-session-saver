@@ -1,9 +1,10 @@
 {
-  "save_file": {"message": "שמור טקסט למחשב" },
-  "new_file": {"message": "קובץ חדש" },
-  "title_label": {"message": "שם המסמך" },
-  "choose_recent": {"message": "מסמכים קודמים" },
-  "browser_action": {"message": "פתח יומן רשימות" },
-  "ext_desc": {"message": "כתוב ושמור טקסטים בלחיצה אחת" },
-  "ext_name": {"message": "יומן רשימות בלחיצה אחת" }
+  "recent_title": {"message": "מצבים קודמים" },
+  "load": {"message": "טען" },
+  "remove": {"message": "הסר" },
+  "count_tabs": {"message": "$1 לשוניות" },
+  "browser_action": {"message": "מצבים" },
+  "ext_desc": {"message": "שמור את הלשוניות הנוכחיות ופתח אותן אחר כך בלחיצה אחת" },
+  "ext_name": {"message": "שמור לשוניות פתוחות בלחיצה אחת" }
 }
+
