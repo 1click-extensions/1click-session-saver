@@ -1,42 +1,5 @@
-# <a href="https://1ce.org/1click-session-saver">1CE - 1click Session Saver</a>
+# <a href="https://1ce.org/1click-session-saver">1CE - 1Click session save</a>
 
-The fastest and smartest way to save and restore your opened sites
-
-
-This extension is an open-source 📰 extension. What is it mean for you:
-
-
-☑ It's mean it's safe. Everyone can inspect the source code.
-☑ It's mean that if you're are a developer or intern your more than welcome to contribute code.
-
-This extension is another extension of 1ce. Our mission is to advance open-source extensions.
-Visit our website to learn more, and be part of the community: https://1ce.org
-
-
-If you have a question, visit the FAQ section on our website: https://1ce.org
-
-Usage Guide:
-
-1. Install the extension (Click on the "Add to Chrome")
-2. Click on the extension icon (After you install it).
-3. In the pop up click "save session"
-4. Whenever you want to restore tabs, click the the extension icon, find your session and click "restore".
-5. To remove session just click "remove".
-6. To find out which sites in any session, click on the tabs count link.
-
-
-For more instruction visit the website: https://1ce.org
-
-
-Permissions explain:
-
-
-We need "tabs" permission to save tour opened websites.
-We don't use this permission to anything else.
-
-Data Usage:
-
-We do not record any of your data usage. Everything stay private on your machine, until your decide you want to share it. 
 
 
 ---
@@ -48,15 +11,6 @@ We do not record any of your data usage. Everything stay private on your machine
 
 -This extension is another extension of 1ce. Our mission is to advance open-source extensions.
 -Visit our website to learn more, and be part of the community: <a href="https://1ce.org">1CE</a>
-
-
-
-## Screenshots
-
-<a href="https://1ce.org/1click-session-saver">
-<img src="https://1ce.org/screenshots/1click-session-saver-1.jpg" />
-</a>
-To view more screenshot please visit <a href="https://1ce.org">1CE - 1Click 1click Session Saver</a> website.
 
 
 
@@ -78,7 +32,7 @@ To view more screenshot please visit <a href="https://1ce.org">1CE - 1Click 1cli
 
 ## Installation
 
-The easiet way to install the plugin, is going to [1CE - 1click Session Saver website](https://1ce.org/1click-session-saver), and then add it to chrome.
+The easiet way to install the plugin, is going to [1CE - 1Click session save website](https://1ce.org/1click-session-saver), and then add it to chrome.
 
 ## Developing
 
