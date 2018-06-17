@@ -1,3 +1,4 @@
+var isInpopup = null;
 $(function(){
     chrome.runtime.sendMessage({action: "getSessions"},
         function (response) {
@@ -54,5 +55,11 @@ $(function(){
                     });
                 }
             });
+        });
+        chrome.runtime.sendMessage({action: "isUsedAlready"},function(usedAlready){
+            if(usedAlready){
+                isInpopup = true;
+                checkIfRankNeededAndAndAddRank();
+            }
         });
 });

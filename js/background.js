@@ -50,6 +50,10 @@ chrome.runtime.onMessage.addListener( function(request,sender,sendResponse)
     {
         sendResponse(SessionsStore.getAllSessions());      
     }
+    if( request.action === "isUsedAlready" )
+    {
+        sendResponse(localStorage.getItem('usedAlready'));      
+    }
     if( request.action === "openSession" )
     {
         let sessions = SessionsStore.getAllSessions(),
@@ -67,7 +71,8 @@ chrome.runtime.onMessage.addListener( function(request,sender,sendResponse)
 	        		if(tab){
 	        			chrome.tabs.create({ url:tab.url});
 	        		}
-	        	}
+				}
+				localStorage.setItem('usedAlready', 1);
 	         });
         	//console.log(selectedSession,sessions);
         	
